@@ -8,7 +8,7 @@
 
 import Foundation
 
-infix operator ~>: AdditionPrecedence
+infix operator ~>: LogicalDisjunctionPrecedence
 
 @discardableResult
 func ~> <A, B, C>(_ f1: @escaping (A) -> B,

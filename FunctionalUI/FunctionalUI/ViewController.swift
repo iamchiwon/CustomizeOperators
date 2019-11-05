@@ -8,7 +8,7 @@
 
 import UIKit
 
-infix operator ~>: AdditionPrecedence
+infix operator ~>: LogicalDisjunctionPrecedence
 
 class ViewController: UIViewController {
     override func viewDidLoad() {
@@ -31,9 +31,9 @@ class ViewController: UIViewController {
                     return v
                 }
                 ~> map { v -> UIView in
-                    v.topAnchor ~> (self.view.topAnchor + 50)
-                    v.leftAnchor ~> (self.view.leftAnchor + 50)
-                    v.rightAnchor ~> (self.view.rightAnchor - 50)
+                    v.topAnchor ~> self.view.topAnchor + 50
+                    v.leftAnchor ~> self.view.leftAnchor + 50
+                    v.rightAnchor ~> self.view.rightAnchor - 50
                     v.heightAnchor ~> 200
                     return v
                 }
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
                     return v
                 }
                 ~> map { v -> UIView in
-                    v.topAnchor ~> (green.topAnchor + 100)
+                    v.topAnchor ~> green.topAnchor + 100
                     v.centerXAnchor ~> self.view.centerXAnchor
                     v.widthAnchor ~> 200
                     v.heightAnchor ~> 200
@@ -65,8 +65,8 @@ class ViewController: UIViewController {
                 ~> map { v -> UIView in
                     v.centerXAnchor ~> yellow.centerXAnchor
                     v.centerYAnchor ~> yellow.centerYAnchor
-                    v.widthAnchor ~> (yellow.widthAnchor * 0.5)
-                    v.heightAnchor ~> (yellow.heightAnchor * 0.5)
+                    v.widthAnchor ~> yellow.widthAnchor * 0.5
+                    v.heightAnchor ~> yellow.heightAnchor * 0.5
                     return v
                 }
         )
