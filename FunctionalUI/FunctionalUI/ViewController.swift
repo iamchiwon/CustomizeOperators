@@ -17,9 +17,10 @@ class ViewController: UIViewController {
         run(
             just { UIView() }
                 ~> addSubView(view)
-                ~> map { v in
+                ~> map { v -> UIView in
                     v.backgroundColor = .systemGray
                     v ~> self.view
+                    return v
                 }
         )
 
@@ -66,7 +67,7 @@ class ViewController: UIViewController {
                     v.centerXAnchor ~> yellow.centerXAnchor
                     v.centerYAnchor ~> yellow.centerYAnchor
                     v.widthAnchor ~> yellow.widthAnchor * 0.5
-                    v.heightAnchor ~> yellow.heightAnchor * 0.5
+                    v.heightAnchor ~> yellow.heightAnchor / 2
                     return v
                 }
         )
