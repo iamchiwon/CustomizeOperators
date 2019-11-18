@@ -4,7 +4,7 @@ let us: Go! 2019 가을 세션 예제 코드
 
 ## Slide
 
-TBD
+[SlideShare](https://www.slideshare.net/ChiwonSong/20191116-custom-operators-in-swift)
 
 ## Video
 
