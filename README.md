@@ -8,7 +8,7 @@ let us: Go! 2019 가을 세션 예제 코드
 
 ## Video
 
-TBD
+[![Custom Operators in Swift](https://img.youtube.com/vi/ZLCYtCxd98s/0.jpg)](https://www.youtube.com/watch?v=ZLCYtCxd98s)
 
 ## Environment
 
