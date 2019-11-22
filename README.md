@@ -1,6 +1,6 @@
 # Cutom Operators
 
-let us: Go! 2019 가을 세션 예제 코드
+[let us: Go! 2019 가을](https://iosdevkor.github.io/let_us_go_2019_fall_review/) 세션 예제 코드
 
 ## Slide
 
